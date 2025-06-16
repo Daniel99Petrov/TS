@@ -16,7 +16,6 @@ const person: Person = { name: "Alice", age: 30 };
 function getFirst<T>(list: T[]): T {
   return list[0];
 }
-
 // Using with strings
 const firstUser = getFirst<string>(["Alice", "Bob"]);
 console.log(firstUser); // "Alice"
@@ -24,6 +23,9 @@ console.log(firstUser); // "Alice"
 // Using with numbers
 const firstScore = getFirst<number>([10, 20, 30]);
 console.log(firstScore); // 10
+
+// const numArray = [4, 56, 6]
+// const firstString = getFirst<string>(numArray);
 
 type Person2 = { name: string; age: number; email: string };
 
